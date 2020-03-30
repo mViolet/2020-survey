@@ -1,0 +1,63 @@
+body {
+	background-image: url("/images/rocknwool-jGXBpAKGkfI-unsplash.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Open Sans";
+	color: white;
+}
+
+textarea, input {
+	padding: 5px;
+	margin-top: 5px;
+	font-family: "Open Sans";
+	Size: 20px;
+	color: grey;
+}
+
+select, button {
+	font-family: "Open Sans";
+	size: 20px;
+}
+
+.all-content {
+	max-width: 60vw;
+	margin: 30px auto;
+	padding: 30px;
+	background-color: rgba(255, 136, 89, .95);
+	border-radius: 10px;
+}
+
+.bottomtext {
+	color: grey;
+	font-size: 15px;
+}
+
+/* form styles */
+
+#comments, #name, #email, #number, #specify-hobby {
+	width: 100%;
+}
+
+#survey-form, .form-section {
+	display: grid;
+	grid-template-columns: 1;
+	grid-row-gap: 10px;
+}
+
+#submit {
+	width: 30%;
+	padding: 10px 0px 10px 0px;
+}
+
+.form-section {
+	margin-top: 30px;
+}
+
+.form-section:first-of-type {
+	margin-top: 5px;
+}
+
+input, button, textarea, select {
+	border-style: none;
+	border-radius: 5px;
+}

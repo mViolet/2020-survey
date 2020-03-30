@@ -2,9 +2,14 @@
 <html>
 <head>
 	<title>2020 Survey</title>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<div class="all-content">
 <h1 id="title">Thank you for using knit.ly!</h1>
 <p id="description">Help us make knit.ly better by taking this short survey.</p>
 
@@ -14,22 +19,20 @@
 	<label id="name-label" for="name">Name:
 		<input id="name" type="text" placeholder="Jane Doe" required>
 	</label>
-</div>
 
-<div class="form-section">
+
 	<label id="email-label" for="email">Email (optional):
 		<input id="email" type="email" placeholder="youremail@website.com" required>
 	</label>
-</div>
 
-<div class="form-section">
+
 	<label id="number-label" for="number">Age:
-		<input id="number" type="number" min="1" max="120" placeholder="Enter age">
+		<input id="number" type="number" min="1" max="120" placeholder="Please enter your age">
 	</label>
 </div>
 
 <div class="form-section">
-	<label for="dropdown"> Which feature would you most like added to knit.ly? Please select from the list:
+	<label for="dropdown"> Which of the following features would you most like to be added to knit.ly?
 		<select id="dropdown">
 			<option value="Select" disabled selected>Select One</option>
 			<option value="Pattern Finder">Pattern Finder</option>
@@ -40,44 +43,45 @@
 </div>
 
 <div class="form-section">
-	<label for="very-likely">Very likely
-		<input id="very-likely" value="Very likely" type="radio" name="recommend">
+	<span>How likely are you to recommend knit.ly to friends or family?</span>
+	<label for="very-likely">
+		<input id="very-likely" class="selection" value="Very likely" type="radio" name="recommend">
+		Very likely
 	</label>
-	<label for="somewhat-likely">Somewhat likely
-		<input id="somewhat-likely" value="Somewhat likely" type="radio" name="recommend">
+	<label for="somewhat-likely">
+		<input id="somewhat-likely" class="selection" value="Somewhat likely" type="radio" name="recommend">
+		Somewhat likely
 	</label>
-	<label for="not-likely">Not likely
-		<input id="not-likely" value="Not very-likely" type="radio" name="recommend">
+	<label for="not-likely">
+		<input id="not-likely" class="selection" value="Not very-likely" type="radio" name="recommend">
+		Not likely
 	</label>
 </div>
 
 <div class="form-section">
-	<p>Do you enjoy any of the following? (Select all that apply)</p>
-	<label for="knitting">Knitting
+	<span>Do you enjoy any of the following? (Select all that apply)</span>
+	<label for="knitting">
 		<input type="checkbox" name="knitting" value="knitting">
+		Knitting
 	</label>
-	<label for="crochet">Crochet
+	<label for="crochet">
 		<input type="checkbox" name="crochet" value="crochet">
+		Crochet
 	</label>
-	<label for="crosstitch">Crosstitch
-		<input type="checkbox" name="crosstitch" value="crosstitch">
-	</label>
-	<label for="weaving">Weaving
-		<input type="checkbox" name="weaving" value="weaving">
-	</label>
-	<label for="spinning">Spinning
+	<label for="spinning">
 		<input type="checkbox" name="spinning" value="spinning">
+		Spinning
 	</label>
-	<label for="other">Other
+	<label for="other">
 		<input type="checkbox" name="other" value="other">
-	</label>
-	<label for="specified-other">Other
-		<input type="text" name="specified-other" placeholder="please specify">
+		Other:
+		<input id="specify-hobby" type="text" name="specified-other" placeholder="Please specify">
 	</label>
 </div>
 
 <div class="form-section">
-	<textarea id="comments" rows="10" cols="50">Please enter any additional comments here :)
+	<span>Anything other feedback? Please let us know!</span>
+	<textarea id="comments" rows="8">Please enter any additional comments here :)
 	</textarea>
 </div>
 
@@ -85,6 +89,13 @@
 
 
 </form>
+</div> <!-- container for text and form -->
+
+<!-- credit badge from unsplash -->
+<div id="imagecredit">
+<span class="bottomtext">Background photo by:</span>
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@rocknwool?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from rocknwool"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">rocknwool</span></a>
+</div>
 
 <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
